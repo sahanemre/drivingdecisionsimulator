@@ -146,7 +146,7 @@
                     "name": "AD",
                     "id": "b0e48d90-352f-4d70-a42f-2f2354c42eec",
                     "path": "1DAxis",
-                    "interactions": "",
+                    "interactions": "Press",
                     "processors": "",
                     "groups": "",
                     "action": "Steer",
@@ -225,7 +225,7 @@
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard&Mouse",
                     "action": "Accelerate",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -236,7 +236,7 @@
                     "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard&Mouse",
                     "action": "Accelerate",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -522,7 +522,7 @@
                     "path": "<Keyboard>/leftAlt",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard&Mouse",
                     "action": "StartCar",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -533,7 +533,7 @@
                     "path": "<Gamepad>/start",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard&Mouse",
                     "action": "StartCar",
                     "isComposite": false,
                     "isPartOfComposite": false
