@@ -780,7 +780,23 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   webGLPowerPreference: 2
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Android: BCG_RTRC
+    EmbeddedLinux: BCG_RTRC
+    GameCoreScarlett: BCG_RTRC
+    GameCoreXboxOne: BCG_RTRC
+    LinuxHeadlessSimulation: BCG_RTRC
+    Lumin: BCG_RTRC
+    Nintendo Switch: BCG_RTRC
+    PS4: BCG_RTRC
+    PS5: BCG_RTRC
+    Stadia: BCG_RTRC
+    Standalone: BCG_RTRC
+    WebGL: BCG_RTRC
+    Windows Store Apps: BCG_RTRC
+    XboxOne: BCG_RTRC
+    iPhone: BCG_RTRC
+    tvOS: BCG_RTRC
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
@@ -882,7 +898,7 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 0
+  activeInputHandler: 2
   windowsGamepadBackendHint: 0
   cloudProjectId: 0fd30369-f350-461e-bbd5-5bb3a46df1cc
   framebufferDepthMemorylessMode: 0

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffcf833d62ed996498e0719551ed8488, type: 3}
+  m_Name: RTC_RPPackages
+  m_EditorClassIdentifier: 
+  Builtin: {fileID: 102900000, guid: 4c3e5171997d6594fb41b994771b9de7, type: 3}
+  URP: {fileID: 102900000, guid: c8c8787f59a848044a8bb980d53f2396, type: 3}
+  HDRP: {fileID: 102900000, guid: 4543ef7d2493e68478a8242170c8fcdc, type: 3}
+  dontWarnAgain: 1
