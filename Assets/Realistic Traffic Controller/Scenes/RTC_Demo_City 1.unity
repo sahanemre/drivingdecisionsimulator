@@ -210,68 +210,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 598122326}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &50321074
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 50321076}
-  - component: {fileID: 50321075}
-  m_Layer: 0
-  m_Name: Waypoint2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &50321075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 50321074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f0379910c344f047ad51cbbb88bad2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypointPosition: {x: -567.81824, y: 21.4, z: -247.29999}
-  connectedLane: {fileID: 295242538}
-  nextWaypoint: {fileID: 1550547270}
-  previousWaypoint: {fileID: 1340060797}
-  interConnectionWaypoint: {fileID: 0}
-  index: 2
-  firstWaypoint: 0
-  lastWaypoint: 0
-  radius: 1.5
-  targetSpeed: 50
-  wait: 0
-  desiredSpeedForNextWaypoint: 24.94331
-  desiredSpeedForInterConnectionWaypoint: 50
-  distanceToNextWaypoint: 150.05228
-  distanceToInterConnectionWaypoint: 0
-  angleToNextWaypoint: 90.20408
-  angleToInterConnectionWaypoint: 0
-  ignoreGizmos: 0
---- !u!4 &50321076
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 50321074}
-  m_LocalRotation: {x: -0.015410009, y: -0.0011512245, z: 0.000017742503, w: -0.9998806}
-  m_LocalPosition: {x: -472.11826, y: 21.4, z: -323.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 295242537}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &61459687 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2506376762189256293, guid: c22d3b0ddb9ad964f855c05bd13fb4b9,
@@ -382,14 +320,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 91037679}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -200, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 392878152}
-  - {fileID: 1315659358}
-  - {fileID: 397768376}
-  - {fileID: 295242537}
+  - {fileID: 944437971}
+  - {fileID: 1282217071}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -557,68 +494,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 106466056}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &116327994
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 116327996}
-  - component: {fileID: 116327995}
-  m_Layer: 0
-  m_Name: Waypoint0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &116327995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 116327994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f0379910c344f047ad51cbbb88bad2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypointPosition: {x: -641.0972, y: 26, z: -318.72552}
-  connectedLane: {fileID: 397768377}
-  nextWaypoint: {fileID: 919921644}
-  previousWaypoint: {fileID: 0}
-  interConnectionWaypoint: {fileID: 1845331365}
-  index: 0
-  firstWaypoint: 1
-  lastWaypoint: 0
-  radius: 1.5
-  targetSpeed: 50
-  wait: 0
-  desiredSpeedForNextWaypoint: 50
-  desiredSpeedForInterConnectionWaypoint: 24.766068
-  distanceToNextWaypoint: 67.12553
-  distanceToInterConnectionWaypoint: 4.9033365
-  angleToNextWaypoint: 0
-  angleToInterConnectionWaypoint: 90.842155
-  ignoreGizmos: 0
---- !u!4 &116327996
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 116327994}
-  m_LocalRotation: {x: -0, y: -0.00024413875, z: -0, w: 1}
-  m_LocalPosition: {x: -540.36725, y: 26, z: -391.32553}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 397768376}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &138329665
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -908,6 +783,68 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!1 &166101602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 166101604}
+  - component: {fileID: 166101603}
+  m_Layer: 0
+  m_Name: Waypoint0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &166101603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166101602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f0379910c344f047ad51cbbb88bad2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypointPosition: {x: -713.8043, y: -174, z: -392.011}
+  connectedLane: {fileID: 1282217072}
+  nextWaypoint: {fileID: 698929533}
+  previousWaypoint: {fileID: 0}
+  interConnectionWaypoint: {fileID: 0}
+  index: 0
+  firstWaypoint: 1
+  lastWaypoint: 0
+  radius: 1.5
+  targetSpeed: 55
+  wait: 0
+  desiredSpeedForNextWaypoint: 55
+  desiredSpeedForInterConnectionWaypoint: 55
+  distanceToNextWaypoint: 68.71102
+  distanceToInterConnectionWaypoint: 0
+  angleToNextWaypoint: 0
+  angleToInterConnectionWaypoint: 0
+  ignoreGizmos: 0
+--- !u!4 &166101604
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166101602}
+  m_LocalRotation: {x: -0, y: 0.00039528814, z: -0, w: 0.99999994}
+  m_LocalPosition: {x: -540.50433, y: 26, z: -392.011}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1282217071}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &201183776 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2506376762189256293, guid: c22d3b0ddb9ad964f855c05bd13fb4b9,
@@ -1091,7 +1028,7 @@ Transform:
   - {fileID: 10324521}
   - {fileID: 952540140}
   m_Father: {fileID: 5006512736252568877}
-  m_RootOrder: 54
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &223384476
 GameObject:
@@ -1129,7 +1066,7 @@ Transform:
   - {fileID: 663650169}
   - {fileID: 2014035387}
   m_Father: {fileID: 5006512736252568877}
-  m_RootOrder: 55
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1001 &246337864
 PrefabInstance:
@@ -1302,7 +1239,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_RootOrder
-      value: 70
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_LocalScale.x
@@ -1318,7 +1255,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4
+      value: -4.05
       objectReference: {fileID: 0}
     - target: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1326,7 +1263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 79.1
+      value: 79.14
       objectReference: {fileID: 0}
     - target: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1362,6 +1299,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
+--- !u!4 &264679436 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552,
+    type: 3}
+  m_PrefabInstance: {fileID: 264679435}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &264831003
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1441,72 +1384,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 264831003}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &295242536
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 295242537}
-  - component: {fileID: 295242538}
-  m_Layer: 0
-  m_Name: Lane_58
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &295242537
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 295242536}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -95.7, y: 0, z: 76.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 436922040}
-  - {fileID: 1340060798}
-  - {fileID: 50321076}
-  - {fileID: 1550547271}
-  - {fileID: 2049220062}
-  m_Father: {fileID: 91037680}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &295242538
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 295242536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8a889a885ffb954387b3e490e0917b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 436922039}
-  - {fileID: 1340060797}
-  - {fileID: 50321075}
-  - {fileID: 1550547270}
-  - {fileID: 2049220063}
-  laneIndex: 58
-  supportedLight: 1
-  supportedMedium: 1
-  supportedHeavy: 0
-  supportedSedan: 1
-  supportedTaxi: 1
-  supportedBus: 0
-  supportedExotic: 1
-  supportedVan: 1
-  supportedPolice: 1
-  hideMiddleWaypointsGizmos: 0
 --- !u!1001 &304528701
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1520,7 +1397,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_RootOrder
-      value: 72
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_LocalScale.x
@@ -1580,6 +1457,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
+--- !u!4 &304528702 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552,
+    type: 3}
+  m_PrefabInstance: {fileID: 304528701}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &308283353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1593,7 +1476,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_RootOrder
-      value: 71
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_LocalScale.x
@@ -1609,7 +1492,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 68.5
+      value: 68.65
       objectReference: {fileID: 0}
     - target: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1653,6 +1536,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
+--- !u!4 &308283354 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552,
+    type: 3}
+  m_PrefabInstance: {fileID: 308283353}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &308751617
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2401,7 +2290,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5006512736252568877}
-  m_RootOrder: 73
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &388844920
 MonoBehaviour:
@@ -2428,18 +2317,18 @@ MonoBehaviour:
     amount: 35
   - trafficVehicle: {fileID: 1949293628482084085, guid: 20f1c93f53008db49b2ce9d91161fc54,
       type: 3}
-    amount: 35
+    amount: 1
   - trafficVehicle: {fileID: 4046099138531892071, guid: 7c29cf9f614336240b187ef9c35dfbe4,
       type: 3}
-    amount: 35
+    amount: 1
   - trafficVehicle: {fileID: 8157298429978324586, guid: 9bfdb8ee4b4dc474ea2ec17bd9efa568,
       type: 3}
     amount: 35
   maximumActiveVehicles: 100
-  radius: 100
+  radius: 108
   closeRadius: 150
   autoCalculateCloseRadius: 1
-  ignoreCloseRadiusOnEnable: 1
+  ignoreCloseRadiusOnEnable: 0
   mainCamera: {fileID: 155794364}
   checkMainCameraRuntime: 0
   followType: 2
@@ -2566,10 +2455,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1158582201}
-  - {fileID: 537189413}
+  - {fileID: 798635355}
   - {fileID: 1171920049}
   - {fileID: 1862663655}
-  - {fileID: 1581757575}
   m_Father: {fileID: 91037680}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2587,77 +2475,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waypoints:
   - {fileID: 1158582200}
-  - {fileID: 537189412}
+  - {fileID: 798635354}
   - {fileID: 1171920048}
   - {fileID: 1862663654}
-  - {fileID: 1581757574}
   laneIndex: 0
-  supportedLight: 1
-  supportedMedium: 1
-  supportedHeavy: 0
-  supportedSedan: 1
-  supportedTaxi: 1
-  supportedBus: 0
-  supportedExotic: 1
-  supportedVan: 1
-  supportedPolice: 1
-  hideMiddleWaypointsGizmos: 0
---- !u!1 &397768375
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 397768376}
-  - component: {fileID: 397768377}
-  m_Layer: 0
-  m_Name: Lane_57
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &397768376
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 397768375}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -100.73, y: 0, z: 72.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 116327996}
-  - {fileID: 919921645}
-  - {fileID: 1796832602}
-  - {fileID: 937815876}
-  - {fileID: 2073646161}
-  m_Father: {fileID: 91037680}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &397768377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 397768375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8a889a885ffb954387b3e490e0917b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 116327995}
-  - {fileID: 919921644}
-  - {fileID: 1796832601}
-  - {fileID: 937815875}
-  - {fileID: 2073646162}
-  laneIndex: 57
   supportedLight: 1
   supportedMedium: 1
   supportedHeavy: 0
@@ -2783,7 +2604,7 @@ Transform:
   - {fileID: 2135092286}
   - {fileID: 1595549823}
   m_Father: {fileID: 5006512736252568877}
-  m_RootOrder: 64
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1001 &407531992
 PrefabInstance:
@@ -2859,68 +2680,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c22d3b0ddb9ad964f855c05bd13fb4b9, type: 3}
---- !u!1 &436922038
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 436922040}
-  - component: {fileID: 436922039}
-  m_Layer: 0
-  m_Name: Waypoint0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &436922039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 436922038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f0379910c344f047ad51cbbb88bad2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypointPosition: {x: -713.2, y: 26, z: -396.7}
-  connectedLane: {fileID: 295242538}
-  nextWaypoint: {fileID: 1340060797}
-  previousWaypoint: {fileID: 0}
-  interConnectionWaypoint: {fileID: 0}
-  index: 0
-  firstWaypoint: 1
-  lastWaypoint: 0
-  radius: 1.5
-  targetSpeed: 60
-  wait: 0
-  desiredSpeedForNextWaypoint: 60
-  desiredSpeedForInterConnectionWaypoint: 60
-  distanceToNextWaypoint: 145.03835
-  distanceToInterConnectionWaypoint: 0
-  angleToNextWaypoint: 0
-  angleToInterConnectionWaypoint: 0
-  ignoreGizmos: 0
---- !u!4 &436922040
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 436922038}
-  m_LocalRotation: {x: -0, y: 0.7066191, z: -0, w: 0.70759416}
-  m_LocalPosition: {x: -617.5, y: 26, z: -473.2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 295242537}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &459397231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2934,7 +2693,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_RootOrder
-      value: 67
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_LocalScale.x
@@ -2994,6 +2753,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
+--- !u!4 &459397232 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552,
+    type: 3}
+  m_PrefabInstance: {fileID: 459397231}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &485761130
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3267,7 +3032,7 @@ Transform:
   - {fileID: 2012404561}
   - {fileID: 1628780111}
   m_Father: {fileID: 5006512736252568877}
-  m_RootOrder: 60
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1001 &536874775
 PrefabInstance:
@@ -3348,68 +3113,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 536874775}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &537189411
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 537189413}
-  - component: {fileID: 537189412}
-  m_Layer: 0
-  m_Name: Waypoint1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &537189412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 537189411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f0379910c344f047ad51cbbb88bad2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypointPosition: {x: -641.1294, y: 26, z: -323.8475}
-  connectedLane: {fileID: 392878153}
-  nextWaypoint: {fileID: 1171920048}
-  previousWaypoint: {fileID: 1158582200}
-  interConnectionWaypoint: {fileID: 116327995}
-  index: 1
-  firstWaypoint: 0
-  lastWaypoint: 0
-  radius: 1.5
-  targetSpeed: 50
-  wait: 0
-  desiredSpeedForNextWaypoint: 25.051605
-  desiredSpeedForInterConnectionWaypoint: 49.894012
-  distanceToNextWaypoint: 68.566055
-  distanceToInterConnectionWaypoint: 5.12208
-  angleToNextWaypoint: 89.814224
-  angleToInterConnectionWaypoint: 0.38154867
-  ignoreGizmos: 0
---- !u!4 &537189413
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 537189411}
-  m_LocalRotation: {x: -0, y: 0.00018400945, z: -0, w: -1}
-  m_LocalPosition: {x: -540.5294, y: 26, z: -323.8475}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 392878152}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &551909265
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4423,6 +4126,68 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 698559017}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &698929532
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 698929534}
+  - component: {fileID: 698929533}
+  m_Layer: 0
+  m_Name: Waypoint1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &698929533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698929532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f0379910c344f047ad51cbbb88bad2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypointPosition: {x: -713.75, y: -174, z: -323.3}
+  connectedLane: {fileID: 1282217072}
+  nextWaypoint: {fileID: 1794778676}
+  previousWaypoint: {fileID: 166101603}
+  interConnectionWaypoint: {fileID: 0}
+  index: 1
+  firstWaypoint: 0
+  lastWaypoint: 0
+  radius: 2.2
+  targetSpeed: 55
+  wait: 0
+  desiredSpeedForNextWaypoint: 27.513842
+  desiredSpeedForInterConnectionWaypoint: 55
+  distanceToNextWaypoint: 68.15006
+  distanceToInterConnectionWaypoint: 0
+  angleToNextWaypoint: 89.954704
+  angleToInterConnectionWaypoint: 0
+  ignoreGizmos: 0
+--- !u!4 &698929534
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698929532}
+  m_LocalRotation: {x: -0, y: -0.00039528814, z: -0, w: -0.99999994}
+  m_LocalPosition: {x: -540.45, y: 26, z: -323.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1282217071}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &698994522 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2506376762189256293, guid: c22d3b0ddb9ad964f855c05bd13fb4b9,
@@ -4921,7 +4686,13 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 788374962}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &794905829
+--- !u!4 &796253937 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2506376762189256293, guid: c22d3b0ddb9ad964f855c05bd13fb4b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1568410465}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &798635353
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4929,8 +4700,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 794905831}
-  - component: {fileID: 794905830}
+  - component: {fileID: 798635355}
+  - component: {fileID: 798635354}
   m_Layer: 0
   m_Name: Waypoint1
   m_TagString: Untagged
@@ -4938,57 +4709,51 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &794905830
+--- !u!114 &798635354
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 794905829}
+  m_GameObject: {fileID: 798635353}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f0379910c344f047ad51cbbb88bad2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypointPosition: {x: -713.22943, y: 26, z: -251.79587}
-  connectedLane: {fileID: 1315659359}
-  nextWaypoint: {fileID: 1371619814}
-  previousWaypoint: {fileID: 1799893430}
+  waypointPosition: {x: -641.05, y: -174, z: -323.3}
+  connectedLane: {fileID: 392878153}
+  nextWaypoint: {fileID: 1171920048}
+  previousWaypoint: {fileID: 1158582200}
   interConnectionWaypoint: {fileID: 0}
   index: 1
   firstWaypoint: 0
   lastWaypoint: 0
-  radius: 1.5
-  targetSpeed: 50
+  radius: 2.2
+  targetSpeed: 55
   wait: 0
-  desiredSpeedForNextWaypoint: 25.091192
-  desiredSpeedForInterConnectionWaypoint: 50
-  distanceToNextWaypoint: 68.01985
+  desiredSpeedForNextWaypoint: 27.513842
+  desiredSpeedForInterConnectionWaypoint: 55
+  distanceToNextWaypoint: 68.15006
   distanceToInterConnectionWaypoint: 0
-  angleToNextWaypoint: 89.67171
+  angleToNextWaypoint: 89.954704
   angleToInterConnectionWaypoint: 0
   ignoreGizmos: 0
---- !u!4 &794905831
+--- !u!4 &798635355
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 794905829}
-  m_LocalRotation: {x: -0, y: 0.00018747318, z: -0, w: -1}
-  m_LocalPosition: {x: -540.5294, y: 26, z: -324.39587}
+  m_GameObject: {fileID: 798635353}
+  m_LocalRotation: {x: -0, y: -0.00039528814, z: -0, w: -0.99999994}
+  m_LocalPosition: {x: -540.45, y: 26, z: -323.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1315659358}
+  m_Father: {fileID: 392878152}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &796253937 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2506376762189256293, guid: c22d3b0ddb9ad964f855c05bd13fb4b9,
-    type: 3}
-  m_PrefabInstance: {fileID: 1568410465}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &805583671
 GameObject:
   m_ObjectHideFlags: 0
@@ -5025,7 +4790,7 @@ Transform:
   - {fileID: 315971057}
   - {fileID: 1839268343}
   m_Father: {fileID: 5006512736252568877}
-  m_RootOrder: 61
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1001 &830790223
 PrefabInstance:
@@ -5221,7 +4986,7 @@ Transform:
   - {fileID: 1907455337}
   - {fileID: 1679287972}
   m_Father: {fileID: 5006512736252568877}
-  m_RootOrder: 59
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &850121673 stripped
 Transform:
@@ -5537,68 +5302,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c22d3b0ddb9ad964f855c05bd13fb4b9, type: 3}
---- !u!1 &919921643
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 919921645}
-  - component: {fileID: 919921644}
-  m_Layer: 0
-  m_Name: Waypoint1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &919921644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919921643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f0379910c344f047ad51cbbb88bad2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypointPosition: {x: -641.13, y: 26, z: -251.6}
-  connectedLane: {fileID: 397768377}
-  nextWaypoint: {fileID: 1796832601}
-  previousWaypoint: {fileID: 116327995}
-  interConnectionWaypoint: {fileID: 0}
-  index: 1
-  firstWaypoint: 0
-  lastWaypoint: 0
-  radius: 1.5
-  targetSpeed: 50
-  wait: 0
-  desiredSpeedForNextWaypoint: 24.866343
-  desiredSpeedForInterConnectionWaypoint: 50
-  distanceToNextWaypoint: 68.57543
-  distanceToInterConnectionWaypoint: 0
-  angleToNextWaypoint: 90.48117
-  angleToInterConnectionWaypoint: 0
-  ignoreGizmos: 0
---- !u!4 &919921645
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919921643}
-  m_LocalRotation: {x: -0, y: 0.00024413875, z: -0, w: -1}
-  m_LocalPosition: {x: -540.4, y: 26, z: -324.2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 397768376}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &933483859
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5691,130 +5394,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 933483859}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &937815874
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 937815876}
-  - component: {fileID: 937815875}
-  m_Layer: 0
-  m_Name: Waypoint3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &937815875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 937815874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f0379910c344f047ad51cbbb88bad2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypointPosition: {x: -573.19183, y: 26, z: -319.10754}
-  connectedLane: {fileID: 397768377}
-  nextWaypoint: {fileID: 2073646162}
-  previousWaypoint: {fileID: 1796832601}
-  interConnectionWaypoint: {fileID: 0}
-  index: 3
-  firstWaypoint: 0
-  lastWaypoint: 0
-  radius: 1.5
-  targetSpeed: 50
-  wait: 0
-  desiredSpeedForNextWaypoint: 25.085003
-  desiredSpeedForInterConnectionWaypoint: 50
-  distanceToNextWaypoint: 48.022053
-  distanceToInterConnectionWaypoint: 0
-  angleToNextWaypoint: 89.69399
-  angleToInterConnectionWaypoint: 0
-  ignoreGizmos: 0
---- !u!4 &937815876
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 937815874}
-  m_LocalRotation: {x: 0.00012304299, y: 0.9994057, z: 0.034284584, w: -0.0035865528}
-  m_LocalPosition: {x: -472.46182, y: 26, z: -391.70755}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 397768376}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &937831076
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 937831077}
-  - component: {fileID: 937831078}
-  m_Layer: 0
-  m_Name: Waypoint4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &937831077
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 937831076}
-  m_LocalRotation: {x: -0, y: 0.70647174, z: -0, w: -0.7077413}
-  m_LocalPosition: {x: -529.0009, y: 26, z: -391.3}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1315659358}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &937831078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 937831076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f0379910c344f047ad51cbbb88bad2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypointPosition: {x: -701.7009, y: 26, z: -318.69998}
-  connectedLane: {fileID: 1315659359}
-  nextWaypoint: {fileID: 1799893430}
-  previousWaypoint: {fileID: 1845331365}
-  interConnectionWaypoint: {fileID: 0}
-  index: 4
-  firstWaypoint: 0
-  lastWaypoint: 1
-  radius: 1.5
-  targetSpeed: 60
-  wait: 0
-  desiredSpeedForNextWaypoint: 59.965107
-  desiredSpeedForInterConnectionWaypoint: 60
-  distanceToNextWaypoint: 11.503418
-  distanceToInterConnectionWaypoint: 0
-  angleToNextWaypoint: 0.104678325
-  angleToInterConnectionWaypoint: 0
-  ignoreGizmos: 0
 --- !u!1001 &940850586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5894,6 +5473,72 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 940850586}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &944437970
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 944437971}
+  - component: {fileID: 944437972}
+  m_Layer: 0
+  m_Name: Lane_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &944437971
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944437970}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -964.1, y: 0, z: 221.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1571013730}
+  - {fileID: 1572428064}
+  - {fileID: 1396944515}
+  - {fileID: 1488263484}
+  - {fileID: 1499934490}
+  m_Father: {fileID: 91037680}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &944437972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944437970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a889a885ffb954387b3e490e0917b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 1571013729}
+  - {fileID: 1572428063}
+  - {fileID: 1396944514}
+  - {fileID: 1488263483}
+  - {fileID: 1499934491}
+  laneIndex: 1
+  supportedLight: 1
+  supportedMedium: 1
+  supportedHeavy: 0
+  supportedSedan: 1
+  supportedTaxi: 1
+  supportedBus: 0
+  supportedExotic: 1
+  supportedVan: 1
+  supportedPolice: 1
+  hideMiddleWaypointsGizmos: 0
 --- !u!1001 &952540139
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6224,7 +5869,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 484574, guid: 93bec4dd0427e844db426ee1317979ff, type: 3}
       propertyPath: m_RootOrder
-      value: 52
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 484574, guid: 93bec4dd0427e844db426ee1317979ff, type: 3}
       propertyPath: m_LocalScale.x
@@ -6284,6 +5929,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93bec4dd0427e844db426ee1317979ff, type: 3}
+--- !u!4 &1032178156 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 484574, guid: 93bec4dd0427e844db426ee1317979ff,
+    type: 3}
+  m_PrefabInstance: {fileID: 1032178155}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1048329226
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6782,20 +6433,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f0379910c344f047ad51cbbb88bad2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypointPosition: {x: -641.1043, y: 26, z: -392.011}
+  waypointPosition: {x: -641.1043, y: -174, z: -392.011}
   connectedLane: {fileID: 392878153}
-  nextWaypoint: {fileID: 537189412}
+  nextWaypoint: {fileID: 798635354}
   previousWaypoint: {fileID: 0}
   interConnectionWaypoint: {fileID: 0}
   index: 0
   firstWaypoint: 1
   lastWaypoint: 0
   radius: 1.5
-  targetSpeed: 50
+  targetSpeed: 55
   wait: 0
-  desiredSpeedForNextWaypoint: 50
-  desiredSpeedForInterConnectionWaypoint: 50
-  distanceToNextWaypoint: 68.16348
+  desiredSpeedForNextWaypoint: 55
+  desiredSpeedForInterConnectionWaypoint: 55
+  distanceToNextWaypoint: 68.71102
   distanceToInterConnectionWaypoint: 0
   angleToNextWaypoint: 0
   angleToInterConnectionWaypoint: 0
@@ -6807,7 +6458,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1158582199}
-  m_LocalRotation: {x: -0, y: -0.00018400945, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: 0.00039528814, z: -0, w: 0.99999994}
   m_LocalPosition: {x: -540.50433, y: 26, z: -392.011}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6923,22 +6574,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f0379910c344f047ad51cbbb88bad2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypointPosition: {x: -572.71826, y: 21.4, z: -323.6}
+  waypointPosition: {x: -572.89996, y: -174.07462, z: -323.3}
   connectedLane: {fileID: 392878153}
   nextWaypoint: {fileID: 1862663654}
-  previousWaypoint: {fileID: 537189412}
+  previousWaypoint: {fileID: 798635354}
   interConnectionWaypoint: {fileID: 0}
   index: 2
   firstWaypoint: 0
   lastWaypoint: 0
   radius: 1.5
-  targetSpeed: 50
+  targetSpeed: 55
   wait: 0
-  desiredSpeedForNextWaypoint: 24.79111
-  desiredSpeedForInterConnectionWaypoint: 50
-  distanceToNextWaypoint: 68.400345
+  desiredSpeedForNextWaypoint: 27.49998
+  desiredSpeedForInterConnectionWaypoint: 55
+  distanceToNextWaypoint: 76.40006
   distanceToInterConnectionWaypoint: 0
-  angleToNextWaypoint: 90.75201
+  angleToNextWaypoint: 90.00007
   angleToInterConnectionWaypoint: 0
   ignoreGizmos: 0
 --- !u!4 &1171920049
@@ -6948,8 +6599,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1171920047}
-  m_LocalRotation: {x: 0.023775663, y: 0.7054289, z: -0.023689806, w: 0.70798564}
-  m_LocalPosition: {x: -472.11826, y: 21.4, z: -323.6}
+  m_LocalRotation: {x: 0.00038709515, y: 0.70710665, z: -0.0003870952, w: 0.7071067}
+  m_LocalPosition: {x: -472.3, y: 25.925379, z: -323.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7054,7 +6705,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_RootOrder
-      value: 66
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_LocalScale.x
@@ -7114,6 +6765,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
+--- !u!4 &1195412582 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552,
+    type: 3}
+  m_PrefabInstance: {fileID: 1195412581}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1198825339
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7127,7 +6784,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_RootOrder
-      value: 68
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_LocalScale.x
@@ -7143,7 +6800,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.35
+      value: 9.33
       objectReference: {fileID: 0}
     - target: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7187,6 +6844,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
+--- !u!4 &1198825340 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552,
+    type: 3}
+  m_PrefabInstance: {fileID: 1198825339}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1200628340 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2506376762189256293, guid: c22d3b0ddb9ad964f855c05bd13fb4b9,
@@ -7223,392 +6886,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allLanes:
-  - {fileID: 295242538}
-  - {fileID: 397768377}
-  - {fileID: 1315659359}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 944437972}
   - {fileID: 392878153}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   allWaypoints:
-  - {fileID: 1550547270}
-  - {fileID: 2049220063}
-  - {fileID: 50321075}
-  - {fileID: 436922039}
-  - {fileID: 1340060797}
-  - {fileID: 937815875}
-  - {fileID: 2073646162}
-  - {fileID: 1796832601}
-  - {fileID: 116327995}
-  - {fileID: 919921644}
-  - {fileID: 794905830}
-  - {fileID: 1799893430}
-  - {fileID: 1371619814}
-  - {fileID: 937831078}
-  - {fileID: 1845331365}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 537189412}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1572428063}
+  - {fileID: 1499934491}
+  - {fileID: 1488263483}
+  - {fileID: 1571013729}
+  - {fileID: 1396944514}
+  - {fileID: 798635354}
   - {fileID: 1158582200}
   - {fileID: 1171920048}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 1581757574}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 1862663654}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   allVehicles: []
   spawner: {fileID: 0}
-  dontSpawnArounds: []
+  dontSpawnArounds:
+  - {fileID: 0}
 --- !u!4 &1234103785
 Transform:
   m_ObjectHideFlags: 0
@@ -8019,6 +7317,68 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1268399278}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1282217070
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1282217071}
+  - component: {fileID: 1282217072}
+  m_Layer: 0
+  m_Name: Lane_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1282217071
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282217070}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -173.3, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 166101604}
+  - {fileID: 698929534}
+  - {fileID: 1794778675}
+  m_Father: {fileID: 91037680}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1282217072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282217070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a889a885ffb954387b3e490e0917b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 166101603}
+  - {fileID: 698929533}
+  - {fileID: 1794778676}
+  laneIndex: 2
+  supportedLight: 1
+  supportedMedium: 1
+  supportedHeavy: 0
+  supportedSedan: 1
+  supportedTaxi: 1
+  supportedBus: 0
+  supportedExotic: 1
+  supportedVan: 1
+  supportedPolice: 1
+  hideMiddleWaypointsGizmos: 0
 --- !u!1001 &1284964348
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8252,74 +7612,8 @@ Transform:
   - {fileID: 884433986}
   - {fileID: 1167404647}
   m_Father: {fileID: 5006512736252568877}
-  m_RootOrder: 58
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!1 &1315659357
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1315659358}
-  - component: {fileID: 1315659359}
-  m_Layer: 0
-  m_Name: Lane_56
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1315659358
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1315659357}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -172.7, y: 0, z: 72.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1799893431}
-  - {fileID: 794905831}
-  - {fileID: 1371619815}
-  - {fileID: 1845331366}
-  - {fileID: 937831077}
-  m_Father: {fileID: 91037680}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1315659359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1315659357}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8a889a885ffb954387b3e490e0917b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 1799893430}
-  - {fileID: 794905830}
-  - {fileID: 1371619814}
-  - {fileID: 1845331365}
-  - {fileID: 937831078}
-  laneIndex: 56
-  supportedLight: 1
-  supportedMedium: 1
-  supportedHeavy: 0
-  supportedSedan: 1
-  supportedTaxi: 1
-  supportedBus: 0
-  supportedExotic: 1
-  supportedVan: 1
-  supportedPolice: 1
-  hideMiddleWaypointsGizmos: 0
 --- !u!1001 &1318481789
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8399,68 +7693,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1318481789}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1340060796
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1340060798}
-  - component: {fileID: 1340060797}
-  m_Layer: 0
-  m_Name: Waypoint1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1340060797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1340060796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f0379910c344f047ad51cbbb88bad2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypointPosition: {x: -568.1618, y: 26, z: -396.5}
-  connectedLane: {fileID: 295242538}
-  nextWaypoint: {fileID: 50321075}
-  previousWaypoint: {fileID: 436922039}
-  interConnectionWaypoint: {fileID: 0}
-  index: 1
-  firstWaypoint: 0
-  lastWaypoint: 0
-  radius: 1.5
-  targetSpeed: 50
-  wait: 0
-  desiredSpeedForNextWaypoint: 25.058567
-  desiredSpeedForInterConnectionWaypoint: 50
-  distanceToNextWaypoint: 149.2713
-  distanceToInterConnectionWaypoint: 0
-  angleToNextWaypoint: 89.789154
-  angleToInterConnectionWaypoint: 0
-  ignoreGizmos: 0
---- !u!4 &1340060798
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1340060796}
-  m_LocalRotation: {x: -0, y: 0.7066191, z: -0, w: 0.70759416}
-  m_LocalPosition: {x: -472.46182, y: 26, z: -473}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 295242537}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1342138741
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8535,68 +7767,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c22d3b0ddb9ad964f855c05bd13fb4b9, type: 3}
---- !u!1 &1371619813
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1371619815}
-  - component: {fileID: 1371619814}
-  m_Layer: 0
-  m_Name: Waypoint2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1371619814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1371619813}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f0379910c344f047ad51cbbb88bad2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypointPosition: {x: -645.3666, y: 21.4, z: -251.38068}
-  connectedLane: {fileID: 1315659359}
-  nextWaypoint: {fileID: 1845331365}
-  previousWaypoint: {fileID: 794905830}
-  interConnectionWaypoint: {fileID: 0}
-  index: 2
-  firstWaypoint: 0
-  lastWaypoint: 0
-  radius: 1.5
-  targetSpeed: 50
-  wait: 0
-  desiredSpeedForNextWaypoint: 24.680964
-  desiredSpeedForInterConnectionWaypoint: 50
-  distanceToNextWaypoint: 67.579025
-  distanceToInterConnectionWaypoint: 0
-  angleToNextWaypoint: 91.14853
-  angleToInterConnectionWaypoint: 0
-  ignoreGizmos: 0
---- !u!4 &1371619815
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1371619813}
-  m_LocalRotation: {x: 0.02399664, y: 0.70453686, z: -0.02385027, w: 0.7088605}
-  m_LocalPosition: {x: -472.66656, y: 21.4, z: -323.98068}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1315659358}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1389688305
 GameObject:
   m_ObjectHideFlags: 0
@@ -8621,7 +7791,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389688305}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -321.83}
+  m_LocalPosition: {x: 0, y: -200, z: -321.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8629,6 +7799,68 @@ Transform:
   - {fileID: 5006512736252568877}
   m_Father: {fileID: 0}
   m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1396944513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1396944515}
+  - component: {fileID: 1396944514}
+  m_Layer: 0
+  m_Name: Waypoint2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1396944514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396944513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f0379910c344f047ad51cbbb88bad2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypointPosition: {x: -641.09985, y: -174, z: -318.90427}
+  connectedLane: {fileID: 944437972}
+  nextWaypoint: {fileID: 1488263483}
+  previousWaypoint: {fileID: 1572428063}
+  interConnectionWaypoint: {fileID: 0}
+  index: 2
+  firstWaypoint: 0
+  lastWaypoint: 0
+  radius: 2.2
+  targetSpeed: 55
+  wait: 0
+  desiredSpeedForNextWaypoint: 27.498898
+  desiredSpeedForInterConnectionWaypoint: 55
+  distanceToNextWaypoint: 67.30427
+  distanceToInterConnectionWaypoint: 0
+  angleToNextWaypoint: 90.0036
+  angleToInterConnectionWaypoint: 0
+  ignoreGizmos: 0
+--- !u!4 &1396944515
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396944513}
+  m_LocalRotation: {x: -0, y: 0.00003135204, z: -0, w: -1}
+  m_LocalPosition: {x: -540.5043, y: 26, z: -323.00006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 944437971}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1403019501
 PrefabInstance:
@@ -9038,7 +8270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_RootOrder
-      value: 69
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_LocalScale.x
@@ -9098,6 +8330,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
+--- !u!4 &1446800461 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552,
+    type: 3}
+  m_PrefabInstance: {fileID: 1446800460}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1474938281
 GameObject:
   m_ObjectHideFlags: 0
@@ -9134,7 +8372,7 @@ Transform:
   - {fileID: 1840630926}
   - {fileID: 1403019502}
   m_Father: {fileID: 5006512736252568877}
-  m_RootOrder: 57
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1001 &1486101645
 PrefabInstance:
@@ -9215,6 +8453,68 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1486101645}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1488263482
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1488263484}
+  - component: {fileID: 1488263483}
+  m_Layer: 0
+  m_Name: Waypoint3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1488263483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488263482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f0379910c344f047ad51cbbb88bad2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypointPosition: {x: -641.09985, y: -174.07462, z: -251.60004}
+  connectedLane: {fileID: 944437972}
+  nextWaypoint: {fileID: 1499934491}
+  previousWaypoint: {fileID: 1396944514}
+  interConnectionWaypoint: {fileID: 0}
+  index: 3
+  firstWaypoint: 0
+  lastWaypoint: 0
+  radius: 2.2
+  targetSpeed: 55
+  wait: 0
+  desiredSpeedForNextWaypoint: 27.499987
+  desiredSpeedForInterConnectionWaypoint: 55
+  distanceToNextWaypoint: 76.70005
+  distanceToInterConnectionWaypoint: 0
+  angleToNextWaypoint: 90.00004
+  angleToInterConnectionWaypoint: 0
+  ignoreGizmos: 0
+--- !u!4 &1488263484
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488263482}
+  m_LocalRotation: {x: -0.0003919599, y: -0.7071067, z: 0.00039195974, w: -0.7071067}
+  m_LocalPosition: {x: -473.2, y: 25.925379, z: -323}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 944437971}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1497274027
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9294,6 +8594,68 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c22d3b0ddb9ad964f855c05bd13fb4b9, type: 3}
+--- !u!1 &1499934489
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1499934490}
+  - component: {fileID: 1499934491}
+  m_Layer: 0
+  m_Name: Waypoint4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1499934490
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499934489}
+  m_LocalRotation: {x: -2.9103828e-10, y: 0.9999999, z: 0.00048641115, w: 0.00000017881392}
+  m_LocalPosition: {x: -473.2, y: 26, z: -399.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 944437971}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1499934491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499934489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f0379910c344f047ad51cbbb88bad2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypointPosition: {x: -564.39984, y: -174, z: -251.6}
+  connectedLane: {fileID: 944437972}
+  nextWaypoint: {fileID: 0}
+  previousWaypoint: {fileID: 1488263483}
+  interConnectionWaypoint: {fileID: 0}
+  index: 4
+  firstWaypoint: 0
+  lastWaypoint: 1
+  radius: 1.5
+  targetSpeed: 55
+  wait: 0
+  desiredSpeedForNextWaypoint: 55
+  desiredSpeedForInterConnectionWaypoint: 55
+  distanceToNextWaypoint: 0
+  distanceToInterConnectionWaypoint: 0
+  angleToNextWaypoint: 0
+  angleToInterConnectionWaypoint: 0
+  ignoreGizmos: 0
 --- !u!1001 &1508393813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9544,68 +8906,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1542920716}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1550547269
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1550547271}
-  - component: {fileID: 1550547270}
-  m_Layer: 0
-  m_Name: Waypoint3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1550547270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1550547269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f0379910c344f047ad51cbbb88bad2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypointPosition: {x: -717.8, y: 26, z: -247.3475}
-  connectedLane: {fileID: 295242538}
-  nextWaypoint: {fileID: 2049220063}
-  previousWaypoint: {fileID: 50321075}
-  interConnectionWaypoint: {fileID: 0}
-  index: 3
-  firstWaypoint: 0
-  lastWaypoint: 0
-  radius: 1.5
-  targetSpeed: 50
-  wait: 0
-  desiredSpeedForNextWaypoint: 25.005043
-  desiredSpeedForInterConnectionWaypoint: 50
-  distanceToNextWaypoint: 76.49661
-  distanceToInterConnectionWaypoint: 0
-  angleToNextWaypoint: 89.98185
-  angleToInterConnectionWaypoint: 0
-  ignoreGizmos: 0
---- !u!4 &1550547271
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1550547269}
-  m_LocalRotation: {x: 0.010838084, y: 0.70713574, z: 0.010841516, w: -0.7069116}
-  m_LocalPosition: {x: -622.1, y: 26, z: -323.8475}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 295242537}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1568410465
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9680,6 +8980,130 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c22d3b0ddb9ad964f855c05bd13fb4b9, type: 3}
+--- !u!1 &1571013728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1571013730}
+  - component: {fileID: 1571013729}
+  m_Layer: 0
+  m_Name: Waypoint0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1571013729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571013728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f0379910c344f047ad51cbbb88bad2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypointPosition: {x: -572.89984, y: -174, z: -266.9}
+  connectedLane: {fileID: 944437972}
+  nextWaypoint: {fileID: 1572428063}
+  previousWaypoint: {fileID: 0}
+  interConnectionWaypoint: {fileID: 0}
+  index: 0
+  firstWaypoint: 1
+  lastWaypoint: 0
+  radius: 1.5
+  targetSpeed: 55
+  wait: 0
+  desiredSpeedForNextWaypoint: 55
+  desiredSpeedForInterConnectionWaypoint: 55
+  distanceToNextWaypoint: 52
+  distanceToInterConnectionWaypoint: 0
+  angleToNextWaypoint: 0
+  angleToInterConnectionWaypoint: 0
+  ignoreGizmos: 0
+--- !u!4 &1571013730
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571013728}
+  m_LocalRotation: {x: -0, y: 0.70703876, z: -0, w: -0.7071749}
+  m_LocalPosition: {x: -488.5, y: 26, z: -391.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 944437971}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1572428062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1572428064}
+  - component: {fileID: 1572428063}
+  m_Layer: 0
+  m_Name: Waypoint1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1572428063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572428062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f0379910c344f047ad51cbbb88bad2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypointPosition: {x: -572.90985, y: -174, z: -318.9}
+  connectedLane: {fileID: 944437972}
+  nextWaypoint: {fileID: 1396944514}
+  previousWaypoint: {fileID: 1571013729}
+  interConnectionWaypoint: {fileID: 0}
+  index: 1
+  firstWaypoint: 0
+  lastWaypoint: 0
+  radius: 1.5
+  targetSpeed: 55
+  wait: 0
+  desiredSpeedForNextWaypoint: 27.504465
+  desiredSpeedForInterConnectionWaypoint: 55
+  distanceToNextWaypoint: 68.19
+  distanceToInterConnectionWaypoint: 0
+  angleToNextWaypoint: 89.98538
+  angleToInterConnectionWaypoint: 0
+  ignoreGizmos: 0
+--- !u!4 &1572428064
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572428062}
+  m_LocalRotation: {x: -0, y: 0.70703876, z: -0, w: -0.7071749}
+  m_LocalPosition: {x: -540.5, y: 26, z: -391.19}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 944437971}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1581398798
 GameObject:
   m_ObjectHideFlags: 0
@@ -9716,69 +9140,7 @@ Transform:
   - {fileID: 1585889024}
   - {fileID: 883792025}
   m_Father: {fileID: 5006512736252568877}
-  m_RootOrder: 65
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1581757573
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1581757575}
-  - component: {fileID: 1581757574}
-  m_Layer: 0
-  m_Name: Waypoint4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1581757574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1581757573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f0379910c344f047ad51cbbb88bad2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypointPosition: {x: -629.6009, y: 26, z: -392.03125}
-  connectedLane: {fileID: 392878153}
-  nextWaypoint: {fileID: 1158582200}
-  previousWaypoint: {fileID: 1862663654}
-  interConnectionWaypoint: {fileID: 0}
-  index: 4
-  firstWaypoint: 0
-  lastWaypoint: 1
-  radius: 1.5
-  targetSpeed: 60
-  wait: 0
-  desiredSpeedForNextWaypoint: 59.903538
-  desiredSpeedForInterConnectionWaypoint: 60
-  distanceToNextWaypoint: 11.503436
-  distanceToInterConnectionWaypoint: 0
-  angleToNextWaypoint: 0.289391
-  angleToInterConnectionWaypoint: 0
-  ignoreGizmos: 0
---- !u!4 &1581757575
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1581757573}
-  m_LocalRotation: {x: -0, y: 0.70827276, z: -0, w: -0.7059389}
-  m_LocalPosition: {x: -529.0009, y: 26, z: -392.03125}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 392878152}
-  m_RootOrder: 4
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1585889023
 PrefabInstance:
@@ -10923,7 +10285,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1781125990}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1796832600
+--- !u!1 &1794778674
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10931,8 +10293,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1796832602}
-  - component: {fileID: 1796832601}
+  - component: {fileID: 1794778675}
+  - component: {fileID: 1794778676}
   m_Layer: 0
   m_Name: Waypoint2
   m_TagString: Untagged
@@ -10940,113 +10302,51 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1796832601
+--- !u!4 &1794778675
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794778674}
+  m_LocalRotation: {x: 0.00038709515, y: 0.70710665, z: -0.0003870952, w: 0.7071067}
+  m_LocalPosition: {x: -472.3, y: 25.925379, z: -323.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1282217071}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1794778676
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1796832600}
+  m_GameObject: {fileID: 1794778674}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f0379910c344f047ad51cbbb88bad2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypointPosition: {x: -572.7112, y: 21.4, z: -252.14249}
-  connectedLane: {fileID: 397768377}
-  nextWaypoint: {fileID: 937815875}
-  previousWaypoint: {fileID: 919921644}
+  waypointPosition: {x: -645.6, y: -174.07462, z: -323.3}
+  connectedLane: {fileID: 1282217072}
+  nextWaypoint: {fileID: 798635354}
+  previousWaypoint: {fileID: 698929533}
   interConnectionWaypoint: {fileID: 0}
   index: 2
   firstWaypoint: 0
-  lastWaypoint: 0
+  lastWaypoint: 1
   radius: 1.5
-  targetSpeed: 50
+  targetSpeed: 55
   wait: 0
-  desiredSpeedForNextWaypoint: 24.938742
-  desiredSpeedForInterConnectionWaypoint: 50
-  distanceToNextWaypoint: 67.12459
+  desiredSpeedForNextWaypoint: 54.69374
+  desiredSpeedForInterConnectionWaypoint: 55
+  distanceToNextWaypoint: 4.5505996
   distanceToInterConnectionWaypoint: 0
-  angleToNextWaypoint: 90.220535
+  angleToNextWaypoint: 1.0022963
   angleToInterConnectionWaypoint: 0
   ignoreGizmos: 0
---- !u!4 &1796832602
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1796832600}
-  m_LocalRotation: {x: 0.02363526, y: 0.7095046, z: -0.023823407, w: 0.7039013}
-  m_LocalPosition: {x: -471.98117, y: 21.4, z: -324.7425}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 397768376}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1799893429
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1799893431}
-  - component: {fileID: 1799893430}
-  m_Layer: 0
-  m_Name: Waypoint0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1799893430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1799893429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f0379910c344f047ad51cbbb88bad2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypointPosition: {x: -713.20435, y: 26, z: -318.69998}
-  connectedLane: {fileID: 1315659359}
-  nextWaypoint: {fileID: 794905830}
-  previousWaypoint: {fileID: 0}
-  interConnectionWaypoint: {fileID: 0}
-  index: 0
-  firstWaypoint: 1
-  lastWaypoint: 0
-  radius: 1.5
-  targetSpeed: 50
-  wait: 0
-  desiredSpeedForNextWaypoint: 49.992226
-  desiredSpeedForInterConnectionWaypoint: 50
-  distanceToNextWaypoint: 66.90412
-  distanceToInterConnectionWaypoint: 0
-  angleToNextWaypoint: 0.027976455
-  angleToInterConnectionWaypoint: 0
-  ignoreGizmos: 0
---- !u!4 &1799893431
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1799893429}
-  m_LocalRotation: {x: -0, y: -0.00018747318, z: -0, w: 1}
-  m_LocalPosition: {x: -540.50433, y: 26, z: -391.3}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1315659358}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1824898981
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11060,7 +10360,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_RootOrder
-      value: 53
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
       propertyPath: m_LocalScale.x
@@ -11120,6 +10420,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5fef14080d92e1448368c964f4f1552, type: 3}
+--- !u!4 &1824898982 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 456242, guid: c5fef14080d92e1448368c964f4f1552,
+    type: 3}
+  m_PrefabInstance: {fileID: 1824898981}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1839268342
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11278,68 +10584,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1840630925}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1845331364
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1845331366}
-  - component: {fileID: 1845331365}
-  m_Layer: 0
-  m_Name: Waypoint3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1845331365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1845331364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f0379910c344f047ad51cbbb88bad2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypointPosition: {x: -646, y: 26, z: -318.8}
-  connectedLane: {fileID: 1315659359}
-  nextWaypoint: {fileID: 937831078}
-  previousWaypoint: {fileID: 1371619814}
-  interConnectionWaypoint: {fileID: 537189412}
-  index: 3
-  firstWaypoint: 0
-  lastWaypoint: 0
-  radius: 1.5
-  targetSpeed: 50
-  wait: 0
-  desiredSpeedForNextWaypoint: 25.12067
-  desiredSpeedForInterConnectionWaypoint: 37.596832
-  distanceToNextWaypoint: 55.701015
-  distanceToInterConnectionWaypoint: 7.0142865
-  angleToNextWaypoint: 89.56559
-  angleToInterConnectionWaypoint: 44.651398
-  ignoreGizmos: 0
---- !u!4 &1845331366
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1845331364}
-  m_LocalRotation: {x: 0.00015996797, y: 0.99940896, z: 0.03405361, w: -0.0046947566}
-  m_LocalPosition: {x: -473.3, y: 26, z: -391.4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1315659358}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1848383766 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2506376762189256293, guid: c22d3b0ddb9ad964f855c05bd13fb4b9,
@@ -11460,22 +10704,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f0379910c344f047ad51cbbb88bad2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypointPosition: {x: -573.0618, y: 26, z: -391.84464}
+  waypointPosition: {x: -572.89996, y: -174, z: -399.7}
   connectedLane: {fileID: 392878153}
-  nextWaypoint: {fileID: 1581757574}
+  nextWaypoint: {fileID: 0}
   previousWaypoint: {fileID: 1171920048}
   interConnectionWaypoint: {fileID: 0}
   index: 3
   firstWaypoint: 0
-  lastWaypoint: 0
+  lastWaypoint: 1
   radius: 1.5
-  targetSpeed: 50
+  targetSpeed: 55
   wait: 0
-  desiredSpeedForNextWaypoint: 25.132355
-  desiredSpeedForInterConnectionWaypoint: 50
-  distanceToNextWaypoint: 56.53937
+  desiredSpeedForNextWaypoint: 55
+  desiredSpeedForInterConnectionWaypoint: 55
+  distanceToNextWaypoint: 0
   distanceToInterConnectionWaypoint: 0
-  angleToNextWaypoint: 89.52352
+  angleToNextWaypoint: 0
   angleToInterConnectionWaypoint: 0
   ignoreGizmos: 0
 --- !u!4 &1862663655
@@ -11485,8 +10729,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1862663653}
-  m_LocalRotation: {x: 0.00008468845, y: 0.9994308, z: 0.033644516, w: -0.002515723}
-  m_LocalPosition: {x: -472.46182, y: 26, z: -391.84464}
+  m_LocalRotation: {x: -0, y: 0.9999999, z: 0.00048832083, w: 0}
+  m_LocalPosition: {x: -472.3, y: 26, z: -399.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11919,7 +11163,7 @@ PrefabInstance:
     - target: {fileID: 2069814030545375927, guid: f7a352f52c0b4034a8e157c2e33e54c4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 25.28
+      value: -175
       objectReference: {fileID: 0}
     - target: {fileID: 2069814030545375927, guid: f7a352f52c0b4034a8e157c2e33e54c4,
         type: 3}
@@ -12102,7 +11346,7 @@ Transform:
   - {fileID: 1640322726}
   - {fileID: 769112141}
   m_Father: {fileID: 5006512736252568877}
-  m_RootOrder: 63
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1001 &1957303783
 PrefabInstance:
@@ -12615,7 +11859,7 @@ Transform:
   - {fileID: 597420900}
   - {fileID: 989522252}
   m_Father: {fileID: 5006512736252568877}
-  m_RootOrder: 56
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &2040077539
 GameObject:
@@ -12732,68 +11976,6 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
---- !u!1 &2049220061
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2049220062}
-  - component: {fileID: 2049220063}
-  m_Layer: 0
-  m_Name: Waypoint4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2049220062
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2049220061}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -622.1, y: 26, z: -400.34412}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 295242537}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2049220063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2049220061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f0379910c344f047ad51cbbb88bad2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypointPosition: {x: -717.8, y: 26, z: -323.84412}
-  connectedLane: {fileID: 295242538}
-  nextWaypoint: {fileID: 0}
-  previousWaypoint: {fileID: 1550547270}
-  interConnectionWaypoint: {fileID: 0}
-  index: 4
-  firstWaypoint: 0
-  lastWaypoint: 1
-  radius: 1.5
-  targetSpeed: 50
-  wait: 0
-  desiredSpeedForNextWaypoint: 50
-  desiredSpeedForInterConnectionWaypoint: 50
-  distanceToNextWaypoint: 0
-  distanceToInterConnectionWaypoint: 0
-  angleToNextWaypoint: 0
-  angleToInterConnectionWaypoint: 0
-  ignoreGizmos: 0
 --- !u!1001 &2053421012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12952,68 +12134,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2072399793}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2073646160
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2073646161}
-  - component: {fileID: 2073646162}
-  m_Layer: 0
-  m_Name: Waypoint4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2073646161
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2073646160}
-  m_LocalRotation: {x: -0, y: 0.70646167, z: -0, w: -0.7077513}
-  m_LocalPosition: {x: -520.4838, y: 26, z: -391.61996}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 397768376}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2073646162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2073646160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f0379910c344f047ad51cbbb88bad2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypointPosition: {x: -621.2138, y: 26, z: -319.01996}
-  connectedLane: {fileID: 397768377}
-  nextWaypoint: {fileID: 116327995}
-  previousWaypoint: {fileID: 937815875}
-  interConnectionWaypoint: {fileID: 0}
-  index: 4
-  firstWaypoint: 0
-  lastWaypoint: 1
-  radius: 1.5
-  targetSpeed: 60
-  wait: 0
-  desiredSpeedForNextWaypoint: 59.752125
-  desiredSpeedForInterConnectionWaypoint: 60
-  distanceToNextWaypoint: 19.885603
-  distanceToInterConnectionWaypoint: 0
-  angleToNextWaypoint: 0.7436213
-  angleToInterConnectionWaypoint: 0
-  ignoreGizmos: 0
 --- !u!20 &2118696821 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 75903023916693807, guid: 5bdad1f75dbfe4d49a55be8933a6ac16,
@@ -13135,7 +12255,7 @@ Transform:
   - {fileID: 209756456}
   - {fileID: 1486101646}
   m_Father: {fileID: 5006512736252568877}
-  m_RootOrder: 62
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &75903022536197722
 PrefabInstance:
@@ -13211,365 +12331,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bdad1f75dbfe4d49a55be8933a6ac16, type: 3}
---- !u!1001 &599535316126221267
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1389688306}
-    m_Modifications:
-    - target: {fileID: 288065647791276632, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 532433811107143410, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 626506280422144740, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 903699278103291799, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 942196765761429930, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 949995052819954467, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1457022487267349666, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1837982196903014291, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1985061372580307034, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2140199997775762721, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2405613396871414959, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2505827662447658472, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2857313326056814164, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2942520927735815572, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3514373555629193823, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3551370046325752958, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3606893441113732676, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3676014194434207614, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3699726503694040872, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3899268900762843643, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3982286488217083587, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4384572195578930372, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4882928439909977594, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4882928439909977594, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4937690815007028789, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4983145326968883127, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5301688399275790334, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5403703946832674573, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 38.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5403703946832674573, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 43.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560625023582791422, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560625023582791422, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -646
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560625023582791422, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560625023582791422, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560625023582791422, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560625023582791422, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560625023582791422, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560625023582791422, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560625023582791422, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560625023582791422, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5560625023582791422, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5649551752806473929, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5652990652178369749, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5708230472372336686, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5720544067620834611, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5916170736497562735, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6011904139041959057, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 35.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 6058481546978273077, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6442111914614451787, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6442111914614451787, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6477491213170959656, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6529596018317301899, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6711518922359421485, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6765219912327419191, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7062706083725250939, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7065652498289009455, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7067595640937992144, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7162238740286323617, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7211870387809586031, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7286760124363334694, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7462205679254431932, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7488823956341648552, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7631641358754120139, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8058394162367664562, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8301688343955467531, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8410691291214126704, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8503858835269505421, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8894634723353695469, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_Name
-      value: RTC_City
-      objectReference: {fileID: 0}
-    - target: {fileID: 8894634723353695469, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8982237853375960365, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9125387444549699539, guid: 00ab3656bb4658a41a9255b621e15cea,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 00ab3656bb4658a41a9255b621e15cea, type: 3}
 --- !u!1001 &1584481009338875415
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13677,6 +12438,11 @@ PrefabInstance:
     - target: {fileID: 1584481008264555278, guid: 7aaa469d2aedf654ab80947d864ce20e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584481008341075474, guid: 7aaa469d2aedf654ab80947d864ce20e,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1584481008341075475, guid: 7aaa469d2aedf654ab80947d864ce20e,
@@ -14200,9 +12966,56 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c9c0eaee5ef43e459dfc3c46255ce79, type: 3}
---- !u!4 &5006512736252568877 stripped
+--- !u!4 &5006512736252568877
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5560625023582791422, guid: 00ab3656bb4658a41a9255b621e15cea,
-    type: 3}
-  m_PrefabInstance: {fileID: 599535316126221267}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8296172668283737918}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -646, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1032178156}
+  - {fileID: 1824898982}
+  - {fileID: 213111127}
+  - {fileID: 223384477}
+  - {fileID: 2034086652}
+  - {fileID: 1474938282}
+  - {fileID: 1308268510}
+  - {fileID: 842105055}
+  - {fileID: 536588190}
+  - {fileID: 805583672}
+  - {fileID: 2136077721}
+  - {fileID: 1954766183}
+  - {fileID: 398918377}
+  - {fileID: 1581398799}
+  - {fileID: 1195412582}
+  - {fileID: 459397232}
+  - {fileID: 1198825340}
+  - {fileID: 1446800461}
+  - {fileID: 264679436}
+  - {fileID: 308283354}
+  - {fileID: 304528702}
+  - {fileID: 388844919}
+  m_Father: {fileID: 1389688306}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8296172668283737918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5006512736252568877}
+  m_Layer: 0
+  m_Name: RTC_City
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
