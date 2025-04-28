@@ -67,6 +67,8 @@ public class Dashboard : MonoBehaviour
 	InterpolatedFloat m_speedMs = new InterpolatedFloat();
 	InterpolatedFloat m_engineRpm = new InterpolatedFloat();
 
+	public float speedMs;
+
 
 	void OnEnable ()
 		{
@@ -115,7 +117,7 @@ public class Dashboard : MonoBehaviour
 
 		float frameRatio = InterpolatedFloat.GetFrameRatio();
 
-		float speedMs = m_speedMs.GetInterpolated(frameRatio);
+		speedMs = m_speedMs.GetInterpolated(frameRatio);
 		float engineRpm = m_engineRpm.GetInterpolated(frameRatio);
 		if (speedMs < 0) speedMs = 0.0f;
 		if (engineRpm < 0) engineRpm = 0.0f;
@@ -180,7 +182,7 @@ public class Dashboard : MonoBehaviour
 			// Speed Mph label
 
 			if (speedMphLabel != null)
-				speedMphLabel.text = (speedMs * 2.237f).ToString("0") + "\nmph";
+				speedMphLabel.text = (speedMs * 3.6f).ToString("0") + "\nkm/h";
 
 			// Gear label
 

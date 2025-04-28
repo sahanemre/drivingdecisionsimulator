@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - StartLine
+  - FinishLine
   layers:
   - Default
   - TransparentFX
@@ -16,8 +18,8 @@ TagManager:
   - RTC_TrafficVehicle
   - RTC_TrafficLight
   - RTC_Ground
-  - 
-  - 
+  - ColliderSimulation
+  - Player
   - 
   - 
   - 

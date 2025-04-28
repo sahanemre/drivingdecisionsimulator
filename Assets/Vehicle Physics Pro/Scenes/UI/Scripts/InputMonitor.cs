@@ -32,8 +32,12 @@ public class InputMonitor : MonoBehaviour
 	public Image aidedSteerLeftBar;
 	public Image aidedSteerRightBar;
 
+	        // --- Eklediğin yeni değişkenler ---
+        public int gasPedalCounter = 0;         // Gas Pedal Counter
+        public int brakePedalCounter = 0;       // Brake Pedal Counter
 
-	void OnEnable ()
+
+		void OnEnable ()
 		{
 		if (vehicle != null)
 			vehicle.onBeforeIntegrationStep += UpdateInput;
@@ -77,8 +81,8 @@ public class InputMonitor : MonoBehaviour
 		SetBar(clutchLockBar, clutchLock >= 0.0f? 1.0f - clutchLock : 0.0f);
 		SetBar(aidedSteerLeftBar, -aidedSteer);
 		SetBar(aidedSteerRightBar, aidedSteer);
-		}
 
+		}
 
 	void SetBar (Image image, float value)
 		{
