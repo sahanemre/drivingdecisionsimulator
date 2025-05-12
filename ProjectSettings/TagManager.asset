@@ -6,6 +6,7 @@ TagManager:
   tags:
   - StartLine
   - FinishLine
+  - TrafficVehicle
   layers:
   - Default
   - TransparentFX

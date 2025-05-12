@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using VehiclePhysics.UI;
+using System.IO;
+using System;
 
 namespace VehiclePhysics.UI
 {
@@ -24,38 +25,65 @@ namespace VehiclePhysics.UI
         private bool timerStarted = false;
         private float startTime = 0f;
 
-        // --- Eklenenler: Genel yarış süresi için ---
         private bool raceTimerStarted = false;
         private float raceStartTime = 0f;
         private float raceEndTime = 0f;
 
+        private float firstSpeed = 0f;
+        private float avarageSpeed = 0f;
+        private float speedSum = 0f;
+        private int speedSampleCount = 0;
+
+        private StreamWriter logWriter;
+
+        private string logDirectory = "/Users/memresahan/SAHANET_2023/SAHANET_GAMES/drivingdecisionsimulator/Assets/SimulationLogs/";
+
+        void Start()
+        {
+            string timestamp = DateTime.Now.ToString("yyyyMMdd_HHmmss");
+            string logFilePath = Path.Combine(logDirectory, "SessionLog_" + timestamp + ".txt");
+
+            try
+            {
+                // Dosya yazma işlemi
+                logWriter = new StreamWriter(logFilePath, true);
+                logWriter.WriteLine("[{0}] Simulation Session Started: {1}", timestamp, DateTime.Now);
+
+                Debug.Log("Simulation Session Log Created: " + logFilePath);
+            }
+            catch (IOException ex)
+            {
+                Debug.LogError("Error opening log file: " + ex.Message);
+            }
+        }
+
         void Update()
         {
-            if (!collisionStarted || collisionFinished) return;  // Yalnızca yarış başladıysa ve bitmediyse çalışsın
+            if (!collisionStarted || collisionFinished) return;
 
             float throttleInput = GetThrottleInput();
             float brakeInput = GetBrakeInput();
 
-            // GAZ pedal kontrol
+            // GAZ kontrolü
             if (throttleInput > 0.1f)
             {
                 if (!gasPressed)
                 {
                     gasPedalCounter++;
                     gasPressed = true;
-                    Debug.Log("Gas Pedal Pressed. Count: " + gasPedalCounter);
+                    Log("Gas Pedal Pressed. Count: " + gasPedalCounter);
 
                     if (!firstGasTouch)
                     {
                         firstGasTouch = true;
-                        Debug.Log("First Gas Pedal Touch detected!");
+                        Log("First Gas Pedal Touch Detected!");
                     }
 
                     if (!timerStarted)
                     {
                         timerStarted = true;
                         startTime = Time.time;
-                        Debug.Log("Timer started at: " + startTime + " seconds");
+                        Log("Gas Pedal Press Duration Timer Started");
                     }
                 }
             }
@@ -64,26 +92,34 @@ namespace VehiclePhysics.UI
                 if (gasPressed && timerStarted)
                 {
                     float elapsedTime = Time.time - startTime;
-                    Debug.Log("Gas Pedal Pressed for " + elapsedTime + " seconds");
+                    Log("Gas Pedal Held For: " + elapsedTime.ToString("F2") + " seconds");
                     timerStarted = false;
                 }
 
                 gasPressed = false;
             }
 
-            // FREN pedal kontrol
+            // FREN kontrolü
             if (brakeInput > 0.1f)
             {
                 if (!brakePressed)
                 {
                     brakePedalCounter++;
                     brakePressed = true;
-                    Debug.Log("Brake Pedal Pressed. Count: " + brakePedalCounter);
+                    Log("Brake Pedal Pressed. Count: " + brakePedalCounter);
                 }
             }
             else
             {
                 brakePressed = false;
+            }
+
+            // Hız örnekleme
+            if (collisionStarted && !collisionFinished)
+            {
+                float currentSpeed = dashboard.speedMs * 3.6f;
+                speedSum += currentSpeed;
+                speedSampleCount++;
             }
         }
 
@@ -92,31 +128,72 @@ namespace VehiclePhysics.UI
             if (other.gameObject.CompareTag("StartLine") && !collisionStarted)
             {
                 collisionStarted = true;
-                Debug.Log("Collision Started");
+                firstSpeed = dashboard.speedMs * 3.6f;
+                Debug.Log("StartLine triggered!");
+                Log("Start Line Triggered. First Speed: " + firstSpeed.ToString("F2") + " km/h");
 
-                // Yarış zamanı başlat
                 if (!raceTimerStarted)
                 {
                     raceTimerStarted = true;
                     raceStartTime = Time.time;
-                    Debug.Log("Race Timer Started at: " + raceStartTime + " seconds");
+                    Log("Race Timer Started");
                 }
             }
 
             if (other.gameObject.CompareTag("FinishLine") && !collisionFinished)
             {
                 collisionFinished = true;
-                Debug.Log("Collision Finished");
+                Log("Finish Line Triggered");
 
                 if (raceTimerStarted)
                 {
                     raceEndTime = Time.time;
                     float totalRaceTime = raceEndTime - raceStartTime;
-                    Debug.Log("Race Finished! Total Race Time: " + totalRaceTime + " seconds");
+                    Log("Race Finished! Total Race Time: " + totalRaceTime.ToString("F2") + " seconds");
+
+                    if (speedSampleCount > 0)
+                    {
+                        avarageSpeed = speedSum / speedSampleCount;
+                        Log("Average Speed: " + avarageSpeed.ToString("F2") + " km/h");
+                    }
 
                     raceTimerStarted = false;
                 }
+
+                Log("Gas Pedal Press Count: " + gasPedalCounter);
+                Log("Brake Pedal Press Count: " + brakePedalCounter);
             }
+        }
+
+        void OnCollisionEnter(Collision collision)
+        {
+            if (collision.gameObject.CompareTag("TrafficVehicle"))
+            {
+                Log("Collision with Traffic Vehicle: " + collision.gameObject.name);
+            }
+        }
+
+        void OnApplicationQuit()
+        {
+            Log("Simulation Session Ended: " + System.DateTime.Now);
+
+            if (logWriter != null)
+            {
+                logWriter.Flush();
+                logWriter.Close();
+                logWriter = null;
+            }
+
+            Debug.Log("Log saved to: " + logDirectory);
+        }
+
+        void Log(string message)
+        {
+            string timeStampedMessage = "[" + System.DateTime.Now.ToString("HH:mm:ss") + "] " + message;
+            Debug.Log(timeStampedMessage);
+
+            if (logWriter != null)
+                logWriter.WriteLine(timeStampedMessage);
         }
 
         float GetThrottleInput()

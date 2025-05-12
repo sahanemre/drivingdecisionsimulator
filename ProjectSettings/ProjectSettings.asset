@@ -76,7 +76,7 @@ PlayerSettings:
   androidFullscreenMode: 1
   defaultIsNativeResolution: 1
   macRetinaSupport: 1
-  runInBackground: 0
+  runInBackground: 1
   captureSingleScreen: 0
   muteOtherAudioSources: 0
   Prepare IOS For Recording: 0
@@ -781,7 +781,7 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: BCG_RTRC
+    Android: BCG_RTRC;USE_INPUT_SYSTEM_POSE_CONTROL;USE_INPUT_SYSTEM_POSE_CONTROL
     EmbeddedLinux: BCG_RTRC
     GameCoreScarlett: BCG_RTRC
     GameCoreXboxOne: BCG_RTRC
@@ -791,9 +791,9 @@ PlayerSettings:
     PS4: BCG_RTRC
     PS5: BCG_RTRC
     Stadia: BCG_RTRC
-    Standalone: BCG_RTRC
+    Standalone: BCG_RTRC;USE_INPUT_SYSTEM_POSE_CONTROL;USE_INPUT_SYSTEM_POSE_CONTROL
     WebGL: BCG_RTRC
-    Windows Store Apps: BCG_RTRC
+    Windows Store Apps: BCG_RTRC;USE_INPUT_SYSTEM_POSE_CONTROL;USE_INPUT_SYSTEM_POSE_CONTROL
     XboxOne: BCG_RTRC
     iPhone: BCG_RTRC
     tvOS: BCG_RTRC
