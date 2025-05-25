@@ -814,7 +814,7 @@ GameObject:
   - component: {fileID: 8157298429978324586}
   m_Layer: 8
   m_Name: Police
-  m_TagString: Untagged
+  m_TagString: TrafficCar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3445,7 +3445,7 @@ GameObject:
   - component: {fileID: 8796766195485151335}
   m_Layer: 8
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: TrafficCar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

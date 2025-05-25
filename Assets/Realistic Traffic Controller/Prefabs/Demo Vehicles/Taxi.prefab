@@ -2327,7 +2327,7 @@ GameObject:
   - component: {fileID: 1925060861153890178}
   m_Layer: 8
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: TrafficCar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2579,7 +2579,7 @@ GameObject:
   - component: {fileID: 3626453980954556677}
   m_Layer: 8
   m_Name: Taxi
-  m_TagString: Untagged
+  m_TagString: TrafficCar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

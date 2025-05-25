@@ -1437,7 +1437,7 @@ GameObject:
   - component: {fileID: 4046099138531892071}
   m_Layer: 8
   m_Name: Van
-  m_TagString: Untagged
+  m_TagString: TrafficCar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3196,7 +3196,7 @@ GameObject:
   - component: {fileID: 1631220499296733124}
   m_Layer: 8
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: TrafficCar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
