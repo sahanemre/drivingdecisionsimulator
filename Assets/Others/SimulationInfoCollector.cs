@@ -14,7 +14,7 @@ namespace VehiclePhysics.UI
 
         [Header("Yarış Durumu")]
         public bool collisionFinished = false;
-        public bool collisionStarted = false;
+        public bool collisionStarted = false; // Yarışın başlayıp başlamadığını takip eder
 
         [Header("Bağlantılar")]
         public Dashboard dashboard; // Dashboard script'ine referans
@@ -38,8 +38,6 @@ namespace VehiclePhysics.UI
         private float totalRaceTime = 0f;
 
         // Ortalama hız için pozisyonlar
-        // Artık hız için pozisyon farkına ihtiyaç duymuyoruz,
-        // ancak toplam mesafeyi yine de başlangıç-bitiş pozisyonlarından hesaplayabiliriz.
         private Vector3 startPosition;
         private Vector3 finishPosition;
         private float totalDistance = 0f; // Toplam mesafe
@@ -73,6 +71,15 @@ namespace VehiclePhysics.UI
         public int finalLeftCameraActivationCount = 0;
         public int finalRightCameraActivationCount = 0;
 
+        // --- Yeni Çarpışma Kontrol Değişkenleri ---
+        [Header("Çarpışma Ayarları")]
+        [Tooltip("Oyuncu aracının etiketi.")]
+        public string playerTag = "Player";
+        [Tooltip("Trafik araçlarının etiketi.")]
+        public string trafficCarTag = "TrafficCar";
+        [Tooltip("Çarpışma nedeniyle yarış bitti mi?")]
+        public bool raceFinishedByCollision = false;
+
 
         void Awake()
         {
@@ -83,7 +90,23 @@ namespace VehiclePhysics.UI
 
         void Update()
         {
-            // Yalnızca yarış başladıysa ve bitmediyse pedal ve kamera kontrollerini yap
+
+            // Tüm olası joystick düğmelerini kontrol et
+            for (int i = 0; i < 20; i++) // Genellikle 0'dan 19'a kadar yeterlidir
+            {
+                // Joystick düğmelerini KeyCode cinsinden kontrol et
+                KeyCode joystickButton = (KeyCode)(KeyCode.JoystickButton0 + i);
+
+                if (Input.GetKeyDown(joystickButton))
+                {
+                    Debug.Log("Basılan Joystick Tuşu: " + joystickButton.ToString() + " (Numara: " + i + ")");
+                }
+            }
+
+            // --- Kamera Kontrolleri ---
+            HandleCameraActivation();
+
+            // Yarış başlamadıysa veya bitmediyse (çarpışma veya bitiş çizgisiyle) güncelleme yapma
             if (!collisionStarted || collisionFinished) return;
 
             float throttleInput = GetThrottleInput();
@@ -134,13 +157,14 @@ namespace VehiclePhysics.UI
                 brakePressed = false;
             }
 
-            // --- Kamera Kontrolleri ---
-            HandleCameraActivation();
+            
 
             // --- Anlık Hızı Kaydet ---
             if (dashboard != null && dashboard.isActiveAndEnabled)
             {
-                recordedSpeedsMs.Add(dashboard.speedMs * 3.6f); // Dashboard'dan anlık hızı al ve listeye ekle
+                // speedMs, Dashboard script'inde zaten m/s cinsinden hızdır.
+                // km/h'ye çevirmek için 3.6 ile çarptık.
+                recordedSpeedsMs.Add(dashboard.speedMs * 3.6f);
             }
         }
 
@@ -171,6 +195,7 @@ namespace VehiclePhysics.UI
                     finalBrakePedalCount = 0;
                     finalAverageSpeed = 0f;
                     totalDistance = 0f;
+                    raceFinishedByCollision = false; // Çarpışma bayrağını sıfırla
 
                     // Kamera sayaçlarını sıfırla
                     leftCameraActivationCount = 0;
@@ -190,68 +215,103 @@ namespace VehiclePhysics.UI
             // --- Bitiş Çizgisi ---
             if (other.gameObject.CompareTag("FinishLine") && !collisionFinished)
             {
-                collisionFinished = true;
-                Debug.Log("Collision Finished");
-
-                if (raceTimerStarted)
+                // Sadece yarış başlamışsa ve çarpışma ile bitmediyse bu bitişi işle
+                if (collisionStarted && !raceFinishedByCollision)
                 {
-                    raceEndTime = Time.time;
-                    finishPosition = transform.position; // Bitiş pozisyonunu kaydet (toplam mesafe için hala gerekli)
-
-                    totalRaceTime = raceEndTime - raceStartTime;
-                    totalDistance = Vector3.Distance(startPosition, finishPosition); // Başlangıç-bitiş pozisyonu mesafesi
-
-                    // Ortalama hızı hesapla (Kaydedilen anlık hızların ortalaması)
-                    if (recordedSpeedsMs.Count > 0)
-                    {
-                        float totalSpeedSum = 0f;
-                        foreach (float speed in recordedSpeedsMs)
-                        {
-                            totalSpeedSum += speed;
-                        }
-                        finalAverageSpeed = totalSpeedSum / recordedSpeedsMs.Count;
-                    }
-                    else
-                    {
-                        finalAverageSpeed = 0f;
-                    }
-
-                    Debug.Log("Race Finished! Total Race Time: " + totalRaceTime + " seconds. Finish Position: " + finishPosition);
-                    Debug.Log("Total Distance (Start-Finish): " + totalDistance + " meters.");
-                    Debug.Log("Average Speed (VPP Data): " + finalAverageSpeed + " m/s");
-
-
-                    // Yarış sonuçlarını kaydet
-                    finalRaceTime = totalRaceTime;
-                    finalGasPedalCount = gasPedalCounter;
-                    finalBrakePedalCount = brakePedalCounter;
-                    finalLeftCameraActivationCount = leftCameraActivationCount;
-                    finalRightCameraActivationCount = rightCameraActivationCount;
-
-                    // Sonuç mesajını oluştur
-                    raceResultText = $"Yarış Tamamlandı!\n" +
-                                     $"Toplam Süre: {finalRaceTime:F2} saniye\n" +
-                                     $"Kat Edilen Mesafe (Start-Finish): {totalDistance:F2} metre\n" +
-                                     $"Ortalama Hız (VPP): {finalAverageSpeed:F2} m/s\n" +
-                                     $"Gaz Pedalı Basılma Sayısı: {finalGasPedalCount}\n" +
-                                     $"Fren Pedalı Basılma Sayısı: {finalBrakePedalCount}\n" +
-                                     $"Sol Kamera Aktivasyon Sayısı (Z): {finalLeftCameraActivationCount}\n" +
-                                     $"Sağ Kamera Aktivasyon Sayısı (X): {finalRightCameraActivationCount}";
-
-                    Debug.Log(raceResultText);
-
-                    raceTimerStarted = false;
-
-                    // Yarış bitince kameraları pasif yap
-                    if (leftCameraObject != null) leftCameraObject.SetActive(false);
-                    if (rightCameraObject != null) rightCameraObject.SetActive(false);
-
-                    // Yarışın bittiğini bildiren olayı fırlat
-                    OnRaceFinished?.Invoke();
-                    Debug.Log("<color=red>SimulationInfoCollector: OnRaceFinished event Fırlatıldı!</color>"); // Debug log
+                    FinishRace("Bitiş Çizgisi Geçildi!");
                 }
             }
         }
+
+        // --- Yeni: Çarpışma Kontrolü ---
+        void OnCollisionEnter(Collision collision)
+        {
+            // Yarış başlamışsa ve henüz bitmemişse (ne bitiş çizgisiyle ne de başka bir çarpışmayla)
+            if (collisionStarted && !collisionFinished)
+            {
+                // Çarpan objenin etiketini alalım
+                string otherTag = collision.gameObject.tag;
+
+                // Eğer Player tag'i bizdeyse ve çarpan obje TrafficCar ise VEYA
+                // Eğer TrafficCar tag'i bizdeyse ve çarpan obje Player ise
+                // (Bu scriptin Player'ın üzerinde olduğunu varsayarak daha basit bir kontrol de yapılabilir: other.gameObject.CompareTag(trafficCarTag))
+                if (gameObject.CompareTag(playerTag) && otherTag == trafficCarTag ||
+                    gameObject.CompareTag(trafficCarTag) && otherTag == playerTag)
+                {
+                    raceFinishedByCollision = true; // Çarpışma nedeniyle bittiğini işaretle
+                    FinishRace("Çarpışma Nedeniyle Yarış Sonlandı!");
+                }
+            }
+        }
+
+
+        // Yarışı Bitirme Mantığını Tek Bir Metotta Topladık
+        private void FinishRace(string reason)
+        {
+            if (collisionFinished) return; // Zaten bitmişse tekrar çalıştırma
+
+            collisionFinished = true;
+            Debug.Log("Collision Finished. Reason: " + reason);
+
+            if (raceTimerStarted)
+            {
+                raceEndTime = Time.time;
+                finishPosition = transform.position; // Bitiş pozisyonunu kaydet (çarpışma anındaki pozisyon)
+
+                totalRaceTime = raceEndTime - raceStartTime;
+                totalDistance = Vector3.Distance(startPosition, finishPosition); // Başlangıç-bitiş/çarpışma pozisyonu mesafesi
+
+                // Ortalama hızı hesapla (Kaydedilen anlık hızların ortalaması)
+                if (recordedSpeedsMs.Count > 0)
+                {
+                    float totalSpeedSum = 0f;
+                    foreach (float speed in recordedSpeedsMs)
+                    {
+                        totalSpeedSum += speed;
+                    }
+                    finalAverageSpeed = totalSpeedSum / recordedSpeedsMs.Count;
+                }
+                else
+                {
+                    finalAverageSpeed = 0f;
+                }
+
+                Debug.Log("Race Finished! Total Race Time: " + totalRaceTime + " seconds. Finish Position: " + finishPosition);
+                Debug.Log("Total Distance (Start-Finish/Collision): " + totalDistance + " meters.");
+                Debug.Log("Average Speed (VPP): " + finalAverageSpeed + " km/h");
+
+
+                // Yarış sonuçlarını kaydet
+                finalRaceTime = totalRaceTime;
+                finalGasPedalCount = gasPedalCounter;
+                finalBrakePedalCount = brakePedalCounter;
+                finalLeftCameraActivationCount = leftCameraActivationCount;
+                finalRightCameraActivationCount = rightCameraActivationCount;
+
+                // Sonuç mesajını oluştur
+                raceResultText = $"Yarış Tamamlandı! ({reason})\n" +
+                                 $"Toplam Süre: {finalRaceTime:F2} saniye\n" +
+                                 $"Kat Edilen Mesafe: {totalDistance:F2} metre\n" +
+                                 $"Ortalama Hız (VPP): {finalAverageSpeed:F2} km/h\n" +
+                                 $"Gaz Pedalı Basılma Sayısı: {finalGasPedalCount}\n" +
+                                 $"Fren Pedalı Basılma Sayısı: {finalBrakePedalCount}\n" +
+                                 $"Sol Kamera Aktivasyon Sayısı (Z): {finalLeftCameraActivationCount}\n" +
+                                 $"Sağ Kamera Aktivasyon Sayısı (X): {finalRightCameraActivationCount}";
+
+                Debug.Log(raceResultText);
+
+                raceTimerStarted = false;
+
+                // Yarış bitince kameraları pasif yap
+                if (leftCameraObject != null) leftCameraObject.SetActive(false);
+                if (rightCameraObject != null) rightCameraObject.SetActive(false);
+
+                // Yarışın bittiğini bildiren olayı fırlat
+                OnRaceFinished?.Invoke();
+                Debug.Log("<color=red>SimulationInfoCollector: OnRaceFinished event Fırlatıldı!</color>"); // Debug log
+            }
+        }
+
 
         // --- Kamera Aktivasyonunu Yöneten Metod ---
         private void HandleCameraActivation()
@@ -259,7 +319,7 @@ namespace VehiclePhysics.UI
             // Sol Kamera (Z tuşu)
             if (leftCameraObject != null)
             {
-                if (Input.GetKeyDown(KeyCode.Z))
+                if (Input.GetKeyDown(KeyCode.JoystickButton6))
                 {
                     if (!isLeftCameraActive)
                     {
@@ -275,7 +335,7 @@ namespace VehiclePhysics.UI
                         }
                     }
                 }
-                else if (Input.GetKeyUp(KeyCode.Z))
+                else if (Input.GetKeyUp(KeyCode.JoystickButton6))
                 {
                     if (isLeftCameraActive)
                     {
@@ -289,7 +349,7 @@ namespace VehiclePhysics.UI
             // Sağ Kamera (X tuşu)
             if (rightCameraObject != null)
             {
-                if (Input.GetKeyDown(KeyCode.X))
+                if (Input.GetKeyDown(KeyCode.JoystickButton7))
                 {
                     if (!isRightCameraActive)
                     {
@@ -305,7 +365,7 @@ namespace VehiclePhysics.UI
                         }
                     }
                 }
-                else if (Input.GetKeyUp(KeyCode.X))
+                else if (Input.GetKeyUp(KeyCode.JoystickButton7))
                 {
                     if (isRightCameraActive)
                     {
@@ -347,5 +407,6 @@ namespace VehiclePhysics.UI
         public float GetTotalDistance() { return totalDistance; }
         public int GetFinalLeftCameraActivationCount() { return finalLeftCameraActivationCount; }
         public int GetFinalRightCameraActivationCount() { return finalRightCameraActivationCount; }
+        public bool IsRaceFinishedByCollision() { return raceFinishedByCollision; } // Yeni: Çarpışma ile bitip bitmediğini döner
     }
 }
