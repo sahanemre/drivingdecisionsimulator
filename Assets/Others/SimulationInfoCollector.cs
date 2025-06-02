@@ -319,7 +319,7 @@ namespace VehiclePhysics.UI
             // Sol Kamera (Z tuşu)
             if (leftCameraObject != null)
             {
-                if (Input.GetKeyDown(KeyCode.JoystickButton6))
+                if (Input.GetKeyDown(KeyCode.Z))
                 {
                     if (!isLeftCameraActive)
                     {
@@ -335,7 +335,7 @@ namespace VehiclePhysics.UI
                         }
                     }
                 }
-                else if (Input.GetKeyUp(KeyCode.JoystickButton6))
+                else if (Input.GetKeyUp(KeyCode.Z))
                 {
                     if (isLeftCameraActive)
                     {
@@ -349,7 +349,7 @@ namespace VehiclePhysics.UI
             // Sağ Kamera (X tuşu)
             if (rightCameraObject != null)
             {
-                if (Input.GetKeyDown(KeyCode.JoystickButton7))
+                if (Input.GetKeyDown(KeyCode.X))
                 {
                     if (!isRightCameraActive)
                     {
@@ -365,7 +365,7 @@ namespace VehiclePhysics.UI
                         }
                     }
                 }
-                else if (Input.GetKeyUp(KeyCode.JoystickButton7))
+                else if (Input.GetKeyUp(KeyCode.X))
                 {
                     if (isRightCameraActive)
                     {
